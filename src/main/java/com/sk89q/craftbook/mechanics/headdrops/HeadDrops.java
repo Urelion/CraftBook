@@ -114,6 +114,11 @@ public class HeadDrops extends AbstractCraftBookMechanic {
                     return;
                 toDrop = new ItemStack(Material.DRAGON_HEAD, 1);
                 break;
+            case PIGLIN:
+                if(!enableMobs)
+                    return;
+                toDrop = new ItemStack(Material.PIGLIN_HEAD, 1);
+                break;
             default:
                 if(!enableMobs)
                     return;
@@ -249,10 +254,10 @@ public class HeadDrops extends AbstractCraftBookMechanic {
         SLIME("MHF_Slime", "HappyHappyMan"),
         SNOWMAN("MHF_SnowGolem", "Koebasti", "scraftbrothers2"),
         SPIDER("MHF_Spider", "Kelevra_V"),
-        STRAY("MHF_Stray"),
+        //STRAY("MHF_Stray"),
         SQUID("MHF_Squid", "squidette8"),
         WITCH("MHF_Witch", "scrafbrothers4"),
-        WITHER("MHF_Wither"),
+        //WITHER("MHF_Wither"),
         WOLF("MHF_Wolf", "Budwolf"),
         VEX("MHF_Vex"),
         VILLAGER("MHF_Villager", "Villager", "Kuvase", "scraftbrothers9");
